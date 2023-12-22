@@ -19,7 +19,7 @@ public class SearchTests {
     @DisplayName("Check label successful search")
     void successfulSearchTest() {
         Configuration.pageLoadStrategy = "eager";
-        step("Open vain page",()->
+        step("Open main page",()->
                 open("https://github.com/"));
         step("Type search",()-> {
             $(".header-search-button").click();
